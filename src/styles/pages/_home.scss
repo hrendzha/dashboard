@@ -1,0 +1,24 @@
+@import '../root';
+
+.sub-menu {
+  > .item {
+    > .in-col {
+      padding: 32px;
+      background-color: $gray3;
+    }
+
+    .icon {
+      padding: 12px;
+      border: 2px solid $gray2;
+    }
+
+    .item-title {
+      display: block;
+      color: $gray;
+    }
+
+    .item-bottom {
+      margin-top: 24px;
+    }
+  }
+}

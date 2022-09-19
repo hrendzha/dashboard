@@ -9,8 +9,10 @@ interface ISvgIcon {
 
 export const SvgIcon = (props: ISvgIcon) => {
   return (
-    <svg aria-hidden="true" focusable="false" className={cls('icon', `icon-${props.name}`, props.className)} {...{ width: props.width, height: props.height }} >
-      <use xlinkHref={`#${props.name}`} />
-    </svg>
-  )
-}
+    <span className={ cls('icon', `icon-${props.name}`) }>
+      <svg aria-hidden="true" className={ props.className } focusable="false" { ...{ width: props.width, height: props.height } } >
+        <use xlinkHref={ `#${props.name}` } />
+      </svg>
+    </span>
+  );
+};

@@ -1,0 +1,13 @@
+@import 'root';
+
+#root {
+  height: 100%;
+}
+
+.cols > header.col {
+  flex-basis: $header-width;
+}
+
+.cols > main.col {
+  flex-grow: 1;
+}

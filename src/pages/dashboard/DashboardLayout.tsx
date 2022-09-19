@@ -13,8 +13,8 @@ export const DashboardLayout = (props: IHomeLayout) => {
   }
 
   return (
-    <div className="homeLayout">
+    <>
       {outlet}
-    </div>
+    </>
   )
 }

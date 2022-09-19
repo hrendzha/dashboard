@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { SvgIcon } from '../sprite/SvgIcon';
 
@@ -10,22 +10,28 @@ export default function LeftNavMenu(props: ILeftNavMenu) {
     <nav className="main-nav">
       <ul>
         <li>
-          <Link className="icon-home" to="/">
-            <SvgIcon name="home" width={ 32 } height={ 32 } />
-            { t('menu.dashboard') }
-          </Link>
+          <NavLink className="text-semibold-1 f-c" to="/">
+            <>
+              <SvgIcon name="home" className="fill-blue" />
+              { t('menu.dashboard') }
+            </>
+          </NavLink>
         </li>
         <li>
-          <Link className="icon icon-home" to="/">
-            <SvgIcon name="email" width={ 32 } height={ 32 } />
-            { t('menu.email') }
-          </Link>
+          <NavLink className="text-semibold-1 f-c" to="/email">
+            <>
+              <SvgIcon name="email" className="fill-blue" />
+              { t('menu.email') }
+            </>
+          </NavLink>
         </li>
         <li>
-          <Link className="icon icon-home" to="/">
-            <SvgIcon name="contacts" width={ 32 } height={ 32 } />
-            { t('menu.contact') }
-          </Link>
+          <NavLink className="text-semibold-1 f-c" to="/contacts">
+            <>
+            <SvgIcon name="contacts" className="fill-blue" />
+              { t('menu.contact') }
+            </>
+          </NavLink>
         </li>
       </ul>
     </nav>

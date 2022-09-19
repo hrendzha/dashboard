@@ -1,0 +1,11 @@
+@import 'root';
+
+.icon {
+  display: inline-flex;
+  padding: 14px;
+  
+  > svg {
+    width: 32px;
+    height: 32px;
+  }
+}

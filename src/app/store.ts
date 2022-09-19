@@ -1,11 +1,13 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import { authApi } from './api/authApi';
 import authReducer from './redux/authSlice';
+import subMenuStatisticsReducer from './redux/subMenuStatistics';
 
 export const store = configureStore({
   reducer: {
     [authApi.reducerPath]: authApi.reducer,
-    auth: authReducer
+    auth: authReducer,
+    subMenuStatistics: subMenuStatisticsReducer
   }
 });
 

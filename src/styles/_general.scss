@@ -1,0 +1,97 @@
+@import 'root';
+
+// colors
+.c-white {
+  color: $white;
+}
+
+.c-black {
+  color: $black;
+}
+
+.c-gray {
+  color: $gray;
+}
+
+.c-gray3 {
+  color: $gray3;
+}
+
+.c-blue {
+  color: $blue;
+}
+
+.bg-gray3 {
+  background-color: $gray3;
+}
+
+.fill-blue {
+  fill: $blue;
+}
+
+.fill-pink {
+  fill: $pink;
+}
+
+.fill-green {
+  fill: $green;
+}
+
+.fill-red {
+  fill: $red;
+}
+// end colors
+
+// margins and paddings
+.mr-20 {
+  margin-right: 20px;
+}
+
+.ph-40 {
+    padding: 0 40px;
+}
+
+// Typography
+.text-semibold-1 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.text-semibold-2 {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.text-regular-1 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.text-regular-2 {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.h1, h1,
+.h2, h2,
+.h3, h3,
+.h4, h4 {
+  font-weight: 700;
+}
+
+.h1, h1 {
+  font-size: 48px;
+}
+
+.h2, h2 {
+  font-size: 36px;
+}
+
+.h3, h3 {
+  font-size: 24px;
+}
+
+.h4, h4 {
+  font-size: 18px;
+}
+// Typography end

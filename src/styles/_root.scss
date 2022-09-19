@@ -4,18 +4,25 @@
   Colors
 */
 
-$black: #333333;
+$black: #0A0603;
 $white: #ffffff;
-$red: #ff0000;
+$red: #FF5B5B;
+$blue: #5149E4;
+$gray: #8A96B1;
+$gray2: #ECEFF7;
+$gray3: #F9FAFF;
+$pink: #FFB9CD;
+$green: #00A389;
 
 /*
   Measurement
 */
-$main-nav-width: 278px;
+$header-width: 278px;
 
 /*
   Paddings and Margins
 */
 
-
-
+@mixin bg($color) {
+  background-color: $color;
+}

@@ -1,7 +1,12 @@
 {
+  "site-name": "Astraq",
   "menu": {
     "dashboard": "Dashboard",
     "email": "Email",
     "contact": "Contact"
-  }
+  },
+  "projects": "Projects",
+  "side-projects": "Side Projects",
+  "investment": "Investment",
+  "assets": "Assets"
 }

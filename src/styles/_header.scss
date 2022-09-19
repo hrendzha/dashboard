@@ -1,0 +1,63 @@
+@import 'root';
+
+header {
+  @include bg($gray3);
+  padding: 48px 0;
+
+  .site-title {
+    margin-bottom: 56px;
+  }
+
+  .site-logo {
+    font-size: 24px;
+    font-weight: 500;
+    color: $black;
+
+    > img {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      margin-right: 16px;
+    }
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: center;
+
+    ul {
+      display: inline-flex;
+      flex-direction: column;
+    }
+
+    li {
+      display: block;
+      margin-bottom: 32px;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: $gray;
+
+      &.active {
+        color: $blue;
+
+        .icon {
+          @include bg($blue);
+
+          svg {
+            fill: $white;
+          }
+        }
+      }
+    }
+
+    .icon {
+      margin-right: 24px;
+      @include bg($gray2);
+    }
+  }
+}
