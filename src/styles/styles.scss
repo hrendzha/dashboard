@@ -2,9 +2,14 @@
 @import 'layout';
 @import 'general';
 @import 'icons';
+@import 'elements';
 @import 'header';
 @import 'structure';
+@import 'blocks';
+@import 'charts/root-pie-chart';
+@import 'charts/line-charts';
 @import 'pages/home';
+@import 'pages/crypto';
 
 .icon-home {
 }

@@ -12,7 +12,7 @@ export default function LeftNavMenu(props: ILeftNavMenu) {
         <li>
           <NavLink className="text-semibold-1 f-c" to="/">
             <>
-              <SvgIcon name="home" className="fill-blue" />
+              <SvgIcon name="home" fillClassName="fill-blue" />
               { t('menu.dashboard') }
             </>
           </NavLink>
@@ -20,7 +20,7 @@ export default function LeftNavMenu(props: ILeftNavMenu) {
         <li>
           <NavLink className="text-semibold-1 f-c" to="/email">
             <>
-              <SvgIcon name="email" className="fill-blue" />
+              <SvgIcon name="email" fillClassName="fill-blue" />
               { t('menu.email') }
             </>
           </NavLink>
@@ -28,8 +28,16 @@ export default function LeftNavMenu(props: ILeftNavMenu) {
         <li>
           <NavLink className="text-semibold-1 f-c" to="/contacts">
             <>
-            <SvgIcon name="contacts" className="fill-blue" />
+            <SvgIcon name="contacts" fillClassName="fill-blue" />
               { t('menu.contact') }
+            </>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className="text-semibold-1 f-c" to="/crypto">
+            <>
+              <SvgIcon name="crypto" fillClassName="fill-blue" />
+              {t('menu.crypto')}
             </>
           </NavLink>
         </li>

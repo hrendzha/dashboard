@@ -1,4 +1,5 @@
-@import '../root';
+@use '../root';
+@import '../components/short-contacts-list';
 
 .sub-menu {
   > .item {
@@ -8,7 +9,6 @@
     }
 
     .icon {
-      padding: 12px;
       border: 2px solid $gray2;
     }
 
@@ -19,6 +19,81 @@
 
     .item-bottom {
       margin-top: 24px;
+    }
+  }
+}
+
+.section-pie-chart {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+
+  .section-header {
+    margin-bottom: 60px;
+  }
+
+  > .section-content {
+    > .col-1 {
+      border-right: solid 1px $gray;
+    }
+    > .col-2 {
+      flex-basis: 350px;
+      max-width: 350px;
+    }
+  }
+}
+
+.section-aggregateBalance {
+  padding: 32px;
+
+  .cols {
+    > .col-1 {
+      flex-basis: 40%;
+    }
+
+    > .col-2 {
+      flex-basis: 60%;
+    }
+  }
+
+  .aggregateBalance-item {
+    > .item-left {
+      display: flex;
+
+      > .left-icon {
+        margin-right: 16px;
+        width: 60px;
+        height: 60px;
+      }
+
+      > .left-descr {
+      }
+    }
+
+    > .item-right {
+    }
+  }
+
+  .col-1:first-child {
+    .aggregateBalance-item {
+      padding-right: 32px;
+      border-right: solid 1px $gray;
+    }
+  }
+}
+
+.section-contacts {
+  > .header {
+    > .header-left {
+      > .header-title {
+      }
+    }
+
+    > .header-right {
+      > .right-link {
+        display: inline-flex;
+        @include bg($blue);
+      }
     }
   }
 }

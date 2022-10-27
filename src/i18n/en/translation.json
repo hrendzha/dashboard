@@ -3,10 +3,23 @@
   "menu": {
     "dashboard": "Dashboard",
     "email": "Email",
-    "contact": "Contact"
+    "contact": "Contact",
+    "crypto": "Crypto"
   },
   "projects": "Projects",
   "side-projects": "Side Projects",
   "investment": "Investment",
-  "assets": "Assets"
+  "assets": "Assets",
+  "activity": "Activity",
+  "last-year": "Last Year",
+  "this-year": "This Year",
+  "messages": "Messages",
+  "you-have-N-messages": "You have <span>{{count}}</span> messages",
+  "contacts": "Contacts",
+  "you-have-N-contacts": "You have {{count}} contacts",
+  "view-more": "View more",
+
+  "bitcoin": "Bitcoin",
+  "litecoin": "Litecoin",
+  "ethereum": "Ethereum"
 }

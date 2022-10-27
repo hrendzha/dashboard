@@ -1,0 +1,87 @@
+@use 'root';
+
+.link-btn {
+  display: inline-block;
+  padding: 0 18px;
+  text-align: center;
+}
+
+.square-btn {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.btn-gray3 {
+  @include bg($gray2);
+}
+
+.btn-block {
+  display: block;
+}
+.btn-flex {
+  display: flex;
+}
+
+.btn-sm {
+  color: $blue;
+  line-height: 61px;
+  
+}
+
+/*checkbox*/
+label.for-checkbox, label.for-radio {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+
+  > em {
+    opacity: 0;
+    transition: opacity 300ms linear;
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    @include bg($gray);
+    border-radius: 3px;
+    pointer-events: none;
+  }
+
+  > input[type="checkbox"],
+  > input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 14px;
+    border: solid 2px $gray;
+    border-radius: 5px;
+    appearance: none;
+
+    &:checked {
+      transition: border 300ms ease-out;
+      border-color: $blue;
+    }
+
+    &:checked + em {
+      @include bg($blue);
+      opacity: 1;
+    }
+
+    &:focus {
+      outline: 4px solid $gray3;
+    }
+  }
+
+  > input[type="radio"] {
+    border-radius: 10px;
+  }
+}
+label.for-radio {
+  > em {
+    border-radius: 5px;
+  }
+  > input[type="radio"] {
+    
+  }
+}

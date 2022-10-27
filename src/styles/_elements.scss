@@ -1,0 +1,55 @@
+@import 'buttons';
+
+section {
+  margin-bottom: 40px;
+}
+
+.link-btn {
+  /*display: inline-flex;
+*/
+  &.size-48 {
+    > .icon.size-32 {
+      padding: 8px;
+    }
+  }
+}
+
+/*
+  Dropdowns
+*/
+.details-down {
+  padding: 14px;
+  position: relative;
+  width: fit-content;
+  background-color: $gray2;
+  user-select: none;
+
+  > summary {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    cursor: pointer;
+
+    &:after {
+      width: 14px;
+      height: 9px;
+      display: inline-flex;
+      align-items: center;
+      content: url('/images/chevron-up_14x9.svg');
+      transition: 1s all;
+    }
+  }
+
+  &[open] > summary:after {
+    //content: url('/images/chevron-down_14x9.svg');
+    transform: rotate(180deg);
+  }
+
+  > .down-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: aqua;
+  }
+}

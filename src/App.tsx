@@ -5,8 +5,8 @@ import { DashboardLayout } from './pages/dashboard/DashboardLayout';
 import { HomePage } from './pages/dashboard/HomePage';
 import { SecondPage } from './pages/dashboard/SecondPage';
 import siteLogo from './images/site-logo.png'
-
-console.log(`siteLogo`, siteLogo);
+import CryptoPage from './pages/dashboard/CryptoPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 export default function App() {
   const { t } = useTranslation();
@@ -28,8 +28,10 @@ export default function App() {
         <Routes>
           <Route element={ <DashboardLayout /> }>
             <Route path="/" element={ <HomePage /> } />
-            <Route path="/second-page" element={ <SecondPage /> } />
+            <Route path="/second-page" element={<SecondPage />} />
+            <Route path="/crypto" element={<CryptoPage />} />
           </Route>
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
     </>

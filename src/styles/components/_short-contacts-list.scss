@@ -1,0 +1,21 @@
+@use '../root';
+
+.contact-item {
+  margin-bottom: 24px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  > .item-left {
+
+    > .left-icon {
+      display: inline-flex;
+      width: 48px;
+      height: 48px;
+      @include bg($gray);
+    }
+
+    > .left-descr {
+    
+    }
+  }
+}
